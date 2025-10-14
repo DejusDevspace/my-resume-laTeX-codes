@@ -1,0 +1,321 @@
+% Professional CV Template - Inspired Design
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+
+% Define colors
+\definecolor{headercolor}{RGB}{210,180,140}
+\definecolor{sectioncolor}{RGB}{0,0,0}
+\definecolor{pagecolor}{RGB}{240,244,247}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    pdftitle={Adejo Ojomideju Gideon - CV},
+    pdfauthor={Adejo Ojomideju Gideon}
+}
+
+% Remove page numbers
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+% \fancyfoot[C]{\thepage}
+
+% Section formatting
+\titleformat{\section}
+  {\normalsize\scshape\raggedright\color{black!80}}
+  {}{0em}
+  {}
+  [\titlerule]
+
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+% Custom commands
+% \newcommand{\resumeSubheading}[5]{
+%   \vspace{2pt}
+%   \item[]
+%     \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%       \textbf{#1} & #2 \\
+%       \textit{#3} & \\
+%       \multicolumn{2}{l}{\small#4} \\
+%     \end{tabular*}
+%     #5
+%   \vspace{-8pt}
+% }
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{2pt}
+  \item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} \textnormal{ \textbar\ #4} & #2 \\ % Title | Location on first line
+      \textit{#3} & \\ % Organization below
+    \end{tabular*}
+    #5
+  \vspace{-8pt}
+}
+
+
+% \newcommand{\resumeProjectHeading}[3]{
+%   \vspace{2pt}
+%   \item[]
+%     \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%       \textbf{#1} \small{#2} & \textit{#3} \\
+%     \end{tabular*}
+%   \vspace{-8pt}
+% }
+
+\newcommand{\resumeProjectHeading}[4]{
+  \vspace{2pt}
+  \item[]
+    \begin{tabular*}{\textwidth}[t]{@{\hspace{0pt}}p{0.82\textwidth}@{\extracolsep{\fill}}r}
+      \textbf{#1} {\small\textbar\ #2} & \textit{#3} \\
+      \if\relax\detokenize{#4}\relax\else
+        \multicolumn{2}{l}{\footnotesize\color{gray!70}\faGithub\ \href{#4}{#4}} \\
+      \fi
+    \end{tabular*}
+  \vspace{-8pt}
+}
+
+
+\begin{document}
+\pagecolor{pagecolor}
+
+% Header with colored background
+\begin{center}
+
+    \begin{minipage}{\dimexpr\textwidth-2\fboxsep}
+        \centering
+        \vspace{8pt}
+        {\Huge\bfseries Adejo Ojomideju Gideon}
+
+        \vspace{4pt}
+            {\small
+            \faMobile\ +234-701-603-5694 |
+            \faEnvelope\ \href{mailto:ojomideju2003@gmail.com}{ojomideju2003@gmail.com} |
+            \faLinkedin\ \href{https://linkedin.com/in/deju-adejo}{linkedin.com/in/deju-adejo} | \\
+            \faGithub\ \href{https://github.com/DejusDevspace}{github.com/DejusDevspace} |
+            \faTwitter\ \href{https://x.com/adejo_deju}{x.com/adejo\_deju} |
+            \faGlobe\ \href{https://dejuadejo.vercel.app}{dejuadejo.vercel.app}
+            }
+            \vspace{8pt}
+    \end{minipage}
+
+\end{center}
+
+\vspace{-5pt}
+
+% Professional Summary Section
+\section{PROFESSIONAL SUMMARY}
+
+\begin{itemize}[leftmargin=0pt, label={}]
+    \item Mechatronics Engineering graduate with hands-on experience in AI/ML, data-driven applications, and full-stack development. Skilled in building intelligent systems that leverage machine learning, automation, and user-friendly interfaces. Proven track record of deploying end-to-end ML solutions from model development to production. Seeking opportunities in AI/ML engineering and data science.
+\end{itemize}
+
+% Education Section
+\section{EDUCATION}
+
+\begin{itemize}[leftmargin=0pt, label={}]
+\item[]
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{Bowen University, Osun State, Iwo} & \\
+    Bachelor of Engineering (B.Eng) in Mechatronics Engineering & Nov 2020 -- Nov 2025 \\
+    \multicolumn{2}{l}{\textbf{CGPA: 4.3/5.0 (Second Class Upper)}} \\
+  \end{tabular*}
+\end{itemize}
+
+\vspace{-8pt}
+
+% Work Experience Section
+\section{WORK EXPERIENCE}
+
+\begin{itemize}[leftmargin=0pt, label={}]
+
+\resumeSubheading
+  {Generative AI \& Data Science Intern}{Sep 2024 -- Present}
+  {FlexiSAF Edusoft Limited}{Remote}
+  {
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Developed ML systems using ensemble learning, deep learning (PyTorch, TensorFlow), and reinforcement learning, contributing optimized feature engineering and model evaluation workflows.
+    \item Participated in collaborative projects focused on real-world AI applications including NLP, time series forecasting, and big data processing with Apache Spark.
+    \item Applied ethical and explainable AI techniques across the full ML development lifecycle, ensuring transparency and fairness in model predictions.
+  \end{itemize}
+  }
+
+\resumeSubheading
+  {Machine Learning Intern}{Feb 2024 -- Sep 2024}
+  {National Center for Artificial Intelligence and Robotics (NCAIR)}{Abuja, Nigeria}
+  {
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Collaborated with teams to build and test ML models for robotics and data science applications, improving system performance through optimized preprocessing and model evaluation workflows.
+    \item Participated in real-world AI projects that involved training and deployment of models on edge devices using edge computing techniques.
+    \item Contributed to robotics integration projects, applying machine learning algorithms to enhance the capabilities of the autonomous system.
+  \end{itemize}
+  }
+
+\resumeSubheading
+  {Mechatronics Engineering Intern}{Jun 2023 -- Sep 2023}
+  {National Space Research and Development Agency (NASRDA)}{Abuja, Nigeria}
+  {
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Gained practical experience in embedded systems and mechatronics processes, including robotics integration and system design.
+    \item Applied fundamentals of electronics and worked with various electronic components in real-world embedded systems applications.
+    \item Learned about mechatronics applications in space research and satellite system development.
+  \end{itemize}
+  }
+
+\resumeSubheading
+  {Data Entry Specialist}{Mar 2023}
+  {virtualousPRO}{Remote}
+  {
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Managed and organized large volumes of structured data using spreadsheets, ensuring high accuracy and consistency.
+    \item Increased data reliability by 17\% through careful validation and correction of data inconsistencies.
+    \item Maintained productivity under tight deadlines, consistently meeting targets without compromising data integrity.
+  \end{itemize}
+  }
+
+\end{itemize}
+
+\vspace{-8pt}
+
+% Projects Section
+\section{PROJECTS}
+
+\begin{itemize}[leftmargin=0pt, label={}]
+
+\resumeProjectHeading
+  {FPL Gaffer}{Python, LangGraph, LangChain, FastAPI, WhatsApp API, TavilyAPI, GroqAPI}{Aug 2025}{https://github.com/DejusDevspace/fpl-gaffer}
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Built an autonomous AI agent system using LangGraph for Fantasy Premier League team management, deployed on WhatsApp with FastAPI webhook infrastructure for real-time bidirectional communication.
+    \item Integrated official FPL API and web search tools, enabling agent to autonomously retrieve player statistics, manager team information, fixtures, and real-time football news.
+    \item Engineered self-validating workflow with automated hallucination detection and corrective loops, reducing inaccurate recommendations by over 80\% through intelligent tool re-execution and data verification.
+    \item Architected agentic workflows with state management for complex decision-making, and memory management, providing personalized transfer recommendations and strategic insights.
+  \end{itemize}
+
+\resumeProjectHeading
+  {Malaria Parasite Stage Classification using GAN-Enhanced Deep Learning}{Python, TensorFlow, PyTorch, Streamlit}{Mar 2025}{}
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Developed end-to-end deep learning pipeline combining GAN-based data augmentation, VGG16 feature extraction, and LSTM temporal modeling for malaria diagnosis from blood smear images.
+    \item Improved model robustness by generating synthetic balanced datasets using trained DCGAN, achieving 14\%+ accuracy gains over baseline CNN models.
+    \item Implemented Streamlit interface for real-time image upload and stage prediction with confidence scores.
+  \end{itemize}
+
+\resumeProjectHeading
+  {Personal Learning Assistant}{Python, LangChain, FAISS, GroqAPI, Streamlit}{Aug 2024}{https://github.com/DejusDevspace/Personal-Leaning-Assistant-Q-A-Conversational-Chatbot}
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Built personal AI assistant for academic learning with note uploads and YouTube video summarization capabilities.
+    \item Integrated semantic routing to handle multiple tasks including Q\&A, summarization, and contextual document chat.
+    \item Designed and implemented RAG pipeline using FAISS vector database for efficient data storage and retrieval with Streamlit interface.
+  \end{itemize}
+
+\resumeProjectHeading
+  {XIAO ESP32S3 Image Classification}{C++, Python, TensorFlow, Keras, ESP32S3, FastAPI, React.js}{Jun 2025}{https://github.com/DejusDevspace/seeed-inference-api}
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Trained and optimized computer vision model using transfer learning from MobileNetV2 with quantization for edge deployment, achieving 98.3\% test accuracy.
+    \item Programmed ESP32-S3 microcontroller firmware with OV2640 camera integration, WiFi connectivty, and automated 15-second interval image capture with HTTP communication.
+    \item Built RESTful API with FastAPI and created responsive React dashboard with drag-and-drop upload, real-time prediction visualization, and confidence scoring.
+  \end{itemize}
+
+\resumeProjectHeading
+  {Invoice Extraction RAG App}{Python, Pandas, LangChain, Streamlit}{Jul 2024}{https://github.com/DejusDevspace/Invoice-Extraction-RAG-application}
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Developed LLM-powered RAG pipeline to automate invoice data extraction using LangChain with Google Generative AI API.
+    \item Designed prompt-engineered templates to parse unstructured PDFs and map values into structured data with CSV export capability.
+    \item Delivered a solution that reduces manual data entry time and enhances reliability in financial workflows.
+  \end{itemize}
+
+\resumeProjectHeading
+    {Image Captioning with Attention}{Python, PyTorch, TensorBoard, Streamlit}{Oct 2024}{https://github.com/DejusDevspace/image-captioning}
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Developed end-to-end image captioning system using encoder-decoder architecture with PyTorch, achieving accurate caption generation on 8,000+ images.
+    \item Implemented CNN encoder using transfer learning from pretrained ResNet50 for feature extraction and LSTM decoder with teacher forcing for sequential text generation.
+    \item Built custom data pipeline with vocabulary management and deployed model with real-time inference pipeline using Streamlit.
+  \end{itemize}
+
+\resumeProjectHeading
+  {Beans Disease Detection Model}{Python, TensorFlow, Keras, Flask, RaspberryPi}{Jun 2024}{https://github.com/DejusDevspace/bean-disease-classification}
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Developed CNN model for classifying bean leaf diseases using transfer learning and custom ensembles, achieving 90\%+ accuracy on training and test sets.
+    \item Applied data preprocessing, augmentation, and feature extraction techniques to enhance model performance and robustness.
+    \item Deployed model via Flask API and on RaspberryPi edge device for real-time inference in agricultural field conditions.
+  \end{itemize}
+
+\resumeProjectHeading
+  {Phishing URL Detector CLI Tool}{Python, Scikit-learn, Tldextract, Pandas, NumPy}{Jun 2025}{https://github.com/DejusDevspace/phishing-detector-ml-cli-toolkit}
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Built machine learning-driven phishing detection tool with engineered feature extraction pipeline, achieving 90.5\% test accuracy.
+    \item Implemented full-featured CLI supporting single URL prediction, batch analysis, and interactive mode for debugging and comparison.
+  \end{itemize}
+
+\resumeProjectHeading
+  {BAES Elections WebApp}{React.js, Node.js (Express), PostgreSQL (Supabase), Tailwindcss}{Dec 2024}{https://github.com/DejusDevspace/baes-election-website}
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Built secure full-stack web application for student voting during Bowen Association of Engineering Students elections.
+    \item Implemented JWT authentication to ensure voter eligibility and election integrity with real-time polling engagement features.
+  \end{itemize}
+
+\resumeProjectHeading
+  {CV Summary Generator}{Python, LangChain, Google Generative AI (Gemini), Streamlit}{Jul 2024}{https://github.com/DejusDevspace/CV-upload-CV-summarize-RAG-app}
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Built an intelligent resume summarizer that processes pdf and docx files using Google Gemini via LangChain.
+    \item Designed prompt templates and refine summarization chains to extract structured insights from resumes.
+    \item Implemented real-time streaming output and secure file handling in Streamlit for an interactive user experience.
+  \end{itemize}
+
+\end{itemize}
+
+% Leadership & Activities Section
+\section{LEADERSHIP \& ACTIVITIES}
+
+\begin{itemize}[leftmargin=0pt, label={}]
+
+\resumeSubheading
+  {Python Programming Tutor}{2024 -- 2025}
+  {Engineering Club, Bowen University}{Iwo, Nigeria}
+  {
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Taught "Python for Engineering Innovation" course to engineering students, covering programming fundamentals and practical applications.
+    \item Developed curriculum and hands-on projects to help students apply Python to solve engineering problems.
+  \end{itemize}
+  }
+
+\resumeSubheading
+  {Hackathon Participant}{Jun 2024}
+  {PipeOps (HackOps 1.0)}{Remote}
+  {
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Participated in a high-pressure hackathon, leading the development of innovative travel and tourism solutions through effective teamwork and time management.
+  \end{itemize}
+  }
+
+\end{itemize}
+
+% Technical Skills Section
+\section{TECHNICAL SKILLS}
+
+\begin{itemize}[leftmargin=0pt, label={}]
+\item \textbf{Languages:} Python (ML/AI, Automation, Data Science), C++ (IoT \& Robotics), JavaScript (ES6+, React), TypeScript, SQL, HTML \& CSS (responsive)
+
+\item \textbf{ML/AI \& Data Science:} PyTorch, TensorFlow, Keras, Scikit-learn, LangChain, LangGraph, LangSmith, HuggingFace, XGBoost, LightGBM, Pandas, NumPy, Matplotlib, Seaborn, Apache Spark
+
+\item \textbf{Web \& Backend:} React.js, FastAPI, Flask, Node.js (Express.js), Firebase, Supabase
+
+\item \textbf{DevOps \& Tools:} Git, Docker, Linux, Vercel, Render, Streamlit, Google Colab, Postman, VS Code, PyCharm, Jupyter Notebook, Arduino IDE
+
+\item \textbf{IoT \& Embedded:} Arduino, RaspberryPi, ESP32, MQTT
+
+\item \textbf{Databases:} PostgreSQL, SQLite, FAISS, Chroma, Pinecone, Qdrant
+\end{itemize}
+
+\end{document}
