@@ -104,9 +104,7 @@
             \faMobile\ +234-701-603-5694 |
             \faEnvelope\ \href{mailto:ojomideju2003@gmail.com}{ojomideju2003@gmail.com} |
             \faLinkedin\ \href{https://linkedin.com/in/deju-adejo}{linkedin.com/in/deju-adejo} | \\
-            \faGithub\ \href{https://github.com/DejusDevspace}{github.com/DejusDevspace} |
-            \faTwitter\ \href{https://x.com/adejo_deju}{x.com/adejo\_deju} |
-            \faGlobe\ \href{https://dejuadejo.vercel.app}{dejuadejo.vercel.app}
+            \faGithub\ \href{https://github.com/DejusDevspace}{github.com/DejusDevspace}
             }
             \vspace{8pt}
     \end{minipage}
@@ -131,7 +129,12 @@
     \textbf{Bowen University, Iwo, Osun State, Nigeria} & \\
     Bachelor of Engineering (B.Eng) in Mechatronics Engineering & July 2025 \\
     \multicolumn{2}{l}{\textbf{CGPA: 4.3/5.0 (Second Class Upper)}} \\
+
   \end{tabular*}
+  \vspace{-12pt}
+  \begin{itemize}[leftmargin=5pt, label={}]
+      \item \textbf{Relevant coursework:} Probability, Linear Algebra, Calculus, Engineering Mathematics, Computer Science, Computational Science, Python for Engineers
+  \end{itemize}
 \end{itemize}
 
 
@@ -195,22 +198,6 @@
 \begin{itemize}[leftmargin=0pt, label={}]
 
 \resumeProjectHeading
-  {FPL Gaffer}{Python, LangGraph, WhatsApp (Twilio), FastAPI, Groq/OpenAI, GitHub Actions}{}{https://github.com/DejusDevspace/fpl-gaffer}
-  \begin{itemize}[leftmargin=15pt, label=\textbullet]
-    \item Built a \textbf{tool-calling LLM agent system} using LangGraph, with \textbf{14 purpose-built tools} for live data retrieval, analysis, external-source lookup, and persistent user-state access.
-    \item Diagnosed and optimized a connection/caching bottleneck in the FPL data layer, reducing \textbf{end-to-end turn latency from 25–60s to 2.5–13s} and per-turn token usage from \textbf{20k+ to 2k–9k ($\sim$55–90\% reduction).}
-    \item Designed a \textbf{multi-provider LLM architecture} with tier-based reasoning budgets and usage-metered subscriptions, with persistent PostgreSQL-backed conversation memory and automated CI validation.
-  \end{itemize}
-
-\resumeProjectHeading
-  {Tether}{Python, RAG, Qdrant, Sentence Transformers, Whisper, Groq, Streamlit, RAGAS}{}{https://github.com/DejusDevspace/tether}
-  \begin{itemize}[leftmargin=15pt, label=\textbullet]
-    \item Built a \textbf{multimodal, source-grounded RAG system} for workplace meetings and documents, supporting \textbf{speaker-aware retrieval, hybrid BM25 + semantic search, and precise document/timestamp citations.}
-    \item Engineered \textbf{PDF ingestion, local Whisper transcription, speaker diarization, vector indexing, retrieval, and LLM generation}, with specialized modes for answers, fact checking, and action-item extraction.
-    \item Evaluated \textbf{8 documents and 4 meeting recordings}, achieving \textbf{0.10–0.35} retrieval and \textbf{$\sim$1–2s end-to-end response latency}, with RAGAS-based quality evaluation.
-  \end{itemize}
-
-\resumeProjectHeading
     {Malaria Parasite Stage Classification}{Python, TensorFlow, PyTorch, LSTM, Streamlit}{}{}
     \begin{itemize} [leftmargin=15pt, label=\textbullet]
     \item Built an end-to-end \textbf{four-class deep learning pipeline} using \textbf{DCGAN-based synthetic data generation, VGG16 feature extraction, and LSTM-based classification.}
@@ -226,6 +213,21 @@
     \item Achieved \textbf{0.90 F1} on a held-out test set and built a CLI for single-URL, batch, and interactive classification.
     \end{itemize}
 
+\resumeProjectHeading
+  {Tether}{Python, RAG, Qdrant, Sentence Transformers, Whisper, Groq, Streamlit, RAGAS}{}{https://github.com/DejusDevspace/tether}
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Built a \textbf{multimodal, source-grounded RAG system} for workplace meetings and documents, supporting \textbf{speaker-aware retrieval, hybrid BM25 + semantic search, and precise document/timestamp citations.}
+    \item Engineered \textbf{PDF ingestion, local Whisper transcription, speaker diarization, vector indexing, retrieval, and LLM generation}, with specialized modes for answers, fact checking, and action-item extraction.
+    \item Evaluated \textbf{8 documents and 4 meeting recordings}, achieving \textbf{0.10–0.35} retrieval and \textbf{$\sim$1–2s end-to-end response latency}, with RAGAS-based quality evaluation.
+  \end{itemize}
+
+\resumeProjectHeading
+  {FPL Gaffer}{Python, LangGraph, WhatsApp (Twilio), FastAPI, Groq/OpenAI, GitHub Actions}{}{https://github.com/DejusDevspace/fpl-gaffer}
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Built a \textbf{tool-calling LLM agent system} using LangGraph, with \textbf{14 purpose-built tools} for live data retrieval, analysis, external-source lookup, and persistent user-state access.
+    \item Diagnosed and optimized a connection/caching bottleneck in the FPL data layer, reducing \textbf{end-to-end turn latency from 25–60s to 2.5–13s} and per-turn token usage from \textbf{20k+ to 2k–9k ($\sim$55–90\% reduction).}
+    \item Designed a \textbf{multi-provider LLM architecture} with tier-based reasoning budgets and usage-metered subscriptions, with persistent PostgreSQL-backed conversation memory and automated CI validation.
+  \end{itemize}
 
 \resumeProjectHeading
     {Image Captioning with Attention}{Python, PyTorch, ResNet50, LSTM, Attention}{}{https://github.com/DejusDevspace/FlexiSAF-Advanced-GenAI-DS-Internship/tree/main/task2/image-captioning}
