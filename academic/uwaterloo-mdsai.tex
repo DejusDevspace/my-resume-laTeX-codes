@@ -1,0 +1,273 @@
+% Professional CV Template - Inspired Design
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+
+% Define colors
+\definecolor{headercolor}{RGB}{210,180,140}
+\definecolor{sectioncolor}{RGB}{0,0,0}
+\definecolor{pagecolor}{RGB}{240,244,247}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    pdftitle={Adejo Ojomideju Gideon - CV},
+    pdfauthor={Adejo Ojomideju Gideon}
+}
+
+% Remove page numbers
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+% \fancyfoot[C]{\thepage}
+
+% Section formatting
+\titleformat{\section}
+  {\normalsize\scshape\raggedright\color{black!80}}
+  {}{0em}
+  {}
+  [\titlerule]
+
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+% Custom commands
+% \newcommand{\resumeSubheading}[5]{
+%   \vspace{2pt}
+%   \item[]
+%     \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%       \textbf{#1} & #2 \\
+%       \textit{#3} & \\
+%       \multicolumn{2}{l}{\small#4} \\
+%     \end{tabular*}
+%     #5
+%   \vspace{-8pt}
+% }
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{2pt}
+  \item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} \textnormal{ \textbar\ #4} & #2 \\ % Title | Location on first line
+      \textit{#3} & \\ % Organization below
+    \end{tabular*}
+    #5
+  \vspace{-8pt}
+}
+
+
+% \newcommand{\resumeProjectHeading}[3]{
+%   \vspace{2pt}
+%   \item[]
+%     \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%       \textbf{#1} \small{#2} & \textit{#3} \\
+%     \end{tabular*}
+%   \vspace{-8pt}
+% }
+
+\newcommand{\resumeProjectHeading}[4]{
+  \vspace{2pt}
+  \item[]
+    \begin{tabular*}{\textwidth}[t]{@{\hspace{0pt}}p{0.82\textwidth}@{\extracolsep{\fill}}r}
+      \textbf{#1} {\small\textbar\ #2} & \textit{#3} \\
+      \if\relax\detokenize{#4}\relax\else
+        \multicolumn{2}{l}{\footnotesize\color{gray!70}\faGithub\ \href{#4}{#4}} \\
+      \fi
+    \end{tabular*}
+  \vspace{-8pt}
+}
+
+
+\begin{document}
+\pagecolor{pagecolor}
+
+% Header with colored background
+\begin{center}
+
+    \begin{minipage}{\dimexpr\textwidth-2\fboxsep}
+        \centering
+        \vspace{8pt}
+        {\Huge\bfseries Adejo Ojomideju Gideon}
+
+        \vspace{4pt}
+            {\small
+            \faMobile\ +234-701-603-5694 |
+            \faEnvelope\ \href{mailto:ojomideju2003@gmail.com}{ojomideju2003@gmail.com} |
+            \faLinkedin\ \href{https://linkedin.com/in/deju-adejo}{linkedin.com/in/deju-adejo} | \\
+            \faGithub\ \href{https://github.com/DejusDevspace}{github.com/DejusDevspace} |
+            \faTwitter\ \href{https://x.com/adejo_deju}{x.com/adejo\_deju} |
+            \faGlobe\ \href{https://dejuadejo.vercel.app}{dejuadejo.vercel.app}
+            }
+            \vspace{8pt}
+    \end{minipage}
+
+\end{center}
+
+\vspace{-5pt}
+
+% % Professional Summary Section
+% \section{PROFESSIONAL SUMMARY}
+
+% \begin{itemize}[leftmargin=0pt, label={}]
+%     \item Mechatronics Engineering graduate with hands-on experience in AI/ML, data-driven applications, and full-stack development. Skilled in building intelligent systems that leverage machine learning, automation, and user-friendly interfaces. Proven track record of deploying end-to-end ML solutions from model development to production. Seeking opportunities in AI/ML engineering and data science.
+% \end{itemize}
+
+% Education Section
+\section{EDUCATION}
+
+\begin{itemize}[leftmargin=0pt, label={}]
+\item[]
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{Bowen University, Iwo, Osun State, Nigeria} & \\
+    Bachelor of Engineering (B.Eng) in Mechatronics Engineering & July 2025 \\
+    \multicolumn{2}{l}{\textbf{CGPA: 4.3/5.0 (Second Class Upper)}} \\
+  \end{tabular*}
+\end{itemize}
+
+
+% Work Experience Section
+\section{PROFESSIONAL EXPERIENCE}
+
+\begin{itemize}[leftmargin=0pt, label={}]
+
+\resumeSubheading
+  {Software Engineer}{Feb 2026 -- Present}
+  {Blackbox Technology Systems Limited}{Abuja, Nigeria}
+  {
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Develop production web applications and enterprise platforms using \textbf{React, Next.js, TypeScript, and Tailwind CSS}, across document management, workflow, internal dashboards, and client-facing systems.
+  \end{itemize}
+  }
+
+\resumeSubheading
+  {Robotics \& AI Instructor}{May 2026 -- July 2026}
+  {AltSchool Africa}{Contract}
+  {
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Designed and delivered an 8-module virtual AI \& Robotics curriculum for young women aged 14–21, including hands-on work with \textbf{TinkerCAD, MakeCode, and Google Teachable Machine}
+  \end{itemize}
+  }
+
+\resumeSubheading
+  {Generative AI \& Data Science Intern}{Sep 2025 -- Dec 2025}
+  {FlexiSAF Edusoft Limited}{Remote}
+  {
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Worked on applied AI/ML systems spanning \textbf{deep learning, ensemble methods, reinforcement learning, NLP, time-series forecasting, and Apache Spark}, contributing to model development, feature engineering, evaluation, and explainability.
+  \end{itemize}
+  }
+
+\resumeSubheading
+  {Machine Learning Intern}{Feb 2024 -- Sep 2024}
+  {National Center for Artificial Intelligence and Robotics (NCAIR)}{Abuja, Nigeria}
+  {
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Developed and evaluated \textbf{machine learning systems for robotics and data science applications}, including model deployment on edge devices and integration of ML capabilities into autonomous systems.
+  \end{itemize}
+  }
+
+\resumeSubheading
+  {Mechatronics Engineering Intern}{Jun 2023 -- Sep 2023}
+  {National Space Research and Development Agency (NASRDA)}{Abuja, Nigeria}
+  {
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Supported \textbf{embedded systems, robotics integration, electronics, and mechatronics development} in applications related to space research and satellite systems.
+  \end{itemize}
+  }
+
+\end{itemize}
+
+\vspace{-8pt}
+
+% Projects Section
+\section{SELECTED PROJECTS}
+
+\begin{itemize}[leftmargin=0pt, label={}]
+
+\resumeProjectHeading
+  {FPL Gaffer}{Python, LangGraph, WhatsApp (Twilio), FastAPI, Groq/OpenAI, GitHub Actions}{}{https://github.com/DejusDevspace/fpl-gaffer}
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Built a \textbf{tool-calling LLM agent system} using LangGraph, with \textbf{14 purpose-built tools} for live data retrieval, analysis, external-source lookup, and persistent user-state access.
+    \item Diagnosed and optimized a connection/caching bottleneck in the FPL data layer, reducing \textbf{end-to-end turn latency from 25–60s to 2.5–13s} and per-turn token usage from \textbf{20k+ to 2k–9k ($\sim$55–90\% reduction).}
+    \item Designed a \textbf{multi-provider LLM architecture} with tier-based reasoning budgets and usage-metered subscriptions, with persistent PostgreSQL-backed conversation memory and automated CI validation.
+  \end{itemize}
+
+\resumeProjectHeading
+  {Tether}{Python, RAG, Qdrant, Sentence Transformers, Whisper, Groq, Streamlit, RAGAS}{}{https://github.com/DejusDevspace/tether}
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    \item Built a \textbf{multimodal, source-grounded RAG system} for workplace meetings and documents, supporting \textbf{speaker-aware retrieval, hybrid BM25 + semantic search, and precise document/timestamp citations.}
+    \item Engineered \textbf{PDF ingestion, local Whisper transcription, speaker diarization, vector indexing, retrieval, and LLM generation}, with specialized modes for answers, fact checking, and action-item extraction.
+    \item Evaluated \textbf{8 documents and 4 meeting recordings}, achieving \textbf{0.10–0.35} retrieval and \textbf{$\sim$1–2s end-to-end response latency}, with RAGAS-based quality evaluation.
+  \end{itemize}
+
+\resumeProjectHeading
+    {Malaria Parasite Stage Classification}{Python, TensorFlow, PyTorch, GANs, VGG16, LSTM, Streamlit}{}{}
+    \begin{itemize} [leftmargin=15pt, label=\textbullet]
+    \item Built an end-to-end \textbf{four-class deep learning pipeline} using \textbf{DCGAN-based synthetic data generation, VGG16 feature extraction, and LSTM-based classification.}
+    \item Tuned generator/discriminator training dynamics and hyperparameters to improve synthetic-image quality and address training instability.
+    \item Improved held-out test performance by \textbf{14\%+ over baseline CNN models}, measured primarily by F1 score, and deployed the model through Streamlit.
+    \end{itemize}
+
+\resumeProjectHeading
+    {Phishing URL Detector}{Python, Scikit-learn, Random Forest, Pandas, NumPy}{}{https://github.com/DejusDevspace/phishing-detector-ml-cli-toolkit}
+    \begin{itemize} [leftmargin=15pt, label=\textbullet]
+    \item Built an end-to-end phishing URL classification pipeline using Random Forest on \textbf{247,950 samples} with \textbf{42 features}.
+    \item Engineered URL features and selected features with at least \textbf{1\% relevance}, enabling prediction directly from raw URLs.
+    \item Achieved \textbf{0.90 F1} on a held-out test set and built a CLI for single-URL, batch, and interactive classification.
+    \end{itemize}
+
+
+\resumeProjectHeading
+    {Image Captioning with Attention}{Python, PyTorch, ResNet50, LSTM, Attention}{}{https://github.com/DejusDevspace/FlexiSAF-Advanced-GenAI-DS-Internship/tree/main/task2/image-captioning}
+    \begin{itemize} [leftmargin=15pt, label=\textbullet]
+    \item Built an encoder-decoder image captioning system with attention using ResNet50 and LSTM, trained on an \textbf{8,000-imag}e Flickr dataset.
+    \item  Implemented preprocessing, vocabulary construction, training, teacher forcing, and inference; achieved a \textbf{BLEU-4 score of ~0.12}.
+    \end{itemize}
+
+\end{itemize}
+
+\vspace{-8pt}
+
+% Leadership & Activities Section
+\section{TEACHING \& ACADEMIC ACTIVITIES}
+
+\begin{itemize}[leftmargin=0pt, label={}]
+
+\resumeSubheading
+  {Python Programming Tutor}{2024 -- 2025}
+  {Engineering Club, Bowen University}{Iwo, Nigeria}
+  {
+  \begin{itemize}[leftmargin=15pt, label=\textbullet]
+    % \item Taught "Python for Engineering Innovation" course to engineering students, covering programming fundamentals and practical applications.
+    % \item Developed curriculum and hands-on projects to help students apply Python to solve engineering problems.
+    \item Taught \textbf{Python for Engineering Innovation} and developed hands-on projects applying Python to engineering problems.
+  \end{itemize}
+  }
+
+\end{itemize}
+
+% Technical Skills Section
+\section{TECHNICAL SKILLS}
+
+\begin{itemize}[leftmargin=0pt, label={}]
+\item \textbf{Programming:} Python, JavaScript/TypeScript, C++, SQL, Go
+
+\item \textbf{ML \& Data Science:} PyTorch, TensorFlow/Keras, Scikit-learn, XGBoost, LightGBM, Pandas, NumPy, Matplotlib, Apache Spark
+
+\item \textbf{AI \& LLM Systems:} LangChain, LangGraph, Hugging Face, RAG, vector databases, LLM evaluation
+
+\item \textbf{Engineering \& Deployment:} FastAPI, Flask, Node.js, React/Next.js, PostgreSQL, Docker, Git, Linux, Streamlit
+
+\end{itemize}
+
+\end{document}
